@@ -36,9 +36,12 @@ project "msdf-atlas-gen"
 	filter "system:windows"
 		systemversion "latest"
 
+	-- SDE-8: vendor MSDF stays optimized in Debug.
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
+		optimize "speed"
+		flags { "NoRuntimeChecks" }
 
 	filter "configurations:Release"
 		runtime "Release"
