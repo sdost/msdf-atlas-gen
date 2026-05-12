@@ -41,7 +41,7 @@ project "msdf-atlas-gen"
 		runtime "Debug"
 		symbols "on"
 		optimize "speed"
-		flags { "NoRuntimeChecks" }
+		runtimechecks "Off"
 
 	filter "configurations:Release"
 		runtime "Release"

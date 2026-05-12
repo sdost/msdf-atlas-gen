@@ -1,5 +1,5 @@
 [submodule "msdfgen"]
 	path = msdfgen
-	url = https://github.com/TheCherno/msdfgen
+	url = https://github.com/sdost/msdfgen
 	ignore = dirty
 	shallow = true
